@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Convivencia Escolar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="icono">🏫</div>
+        <h1>Cuestionario diagnóstico de convivencia escolar</h1>
+        <h2>PAEC: Construcción de paz en el CETIS</h2>
+        <p>Transformando la convivencia y previniendo la violencia</p>
+    </header>
+
+    <main class="contenedor">
+
+        <div class="introduccion">
+            <h2>¡Tu opinión es importante!</h2>
+            <p>
+                Este cuestionario tiene como propósito conocer tu opinión
+                sobre la convivencia escolar, la seguridad y el bienestar
+                dentro del plantel.
+            </p>
+            <p><strong>Instrucciones:</strong> Lee cuidadosamente cada pregunta
+            y selecciona una sola respuesta. Todas las preguntas son obligatorias.</p>
+            <div class="aviso">📝 Responde con sinceridad. Tus respuestas serán enviadas al correo indicado.</div>
+        </div>
+
+        <div class="progreso">
+            <div class="barra">
+                <div id="avance"></div>
+            </div>
+            <p id="contador">0 de 24 preguntas contestadas</p>
+        </div>
+
+        <form id="cuestionario"
+              action="https://formsubmit.co/arias.moreno.esmeralda.c29@gmail.com"
+              method="POST">
+
+            <input type="hidden" name="_subject"
+                   value="Nuevo cuestionario de convivencia escolar">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div id="preguntas"></div>
+
+            <div class="final">
+                <p>¡Gracias por participar y contribuir a una mejor convivencia escolar!</p>
+                <button type="submit" id="enviar">
+                    Enviar cuestionario ✉️
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>PAEC - Construcción de paz en el CETIS</p>
+        <p>Cuestionario diagnóstico de convivencia escolar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
